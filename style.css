@@ -160,17 +160,67 @@ li { margin-bottom: 10px; }
   font-weight: 600;
 }
 
-/* ==== RESPONSIVE DESIGN ==== */
-@media (max-width: 1024px) {
-  .toc-sidebar {
-    display: none; /* Hide Table of Contents on smaller screens */
-  }
+/* ==== NEW: HAMBURGER MENU STYLES ==== */
+.hamburger-menu {
+  display: none; /* Hidden on desktop */
+  flex-direction: column;
+  justify-content: space-around;
+  width: 28px;
+  height: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 10;
 }
 
+.hamburger-menu .bar {
+  width: 28px;
+  height: 3px;
+  background-color: var(--text-color);
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* ==== RESPONSIVE DESIGN (UPDATED) ==== */
 @media (max-width: 768px) {
-  .main-nav {
-    display: none; /* Simple hiding for demo; a hamburger menu is a common enhancement */
+  .header-content {
+    padding: 0 15px;
   }
+  
+  .hamburger-menu {
+    display: flex; /* Show the hamburger on mobile */
+  }
+
+  .main-nav {
+    display: none; /* Hide nav links by default on mobile */
+    position: absolute;
+    top: var(--header-height); /* Position it right below the header */
+    left: 0;
+    width: 100%;
+    background-color: var(--header-bg);
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 5px var(--shadow-color);
+    padding: 10px 0;
+  }
+  
+  /* This class will be added by JavaScript to show the menu */
+  .main-nav.nav-open {
+    display: flex;
+  }
+  
+  .main-nav a {
+    margin: 10px 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .main-nav a.active {
+    border-bottom: none; /* Remove border for mobile view */
+    background-color: var(--bg-color);
+  }
+
   .page-header h1 { font-size: 2.2rem; }
   section h2 { font-size: 1.5rem; }
 }
