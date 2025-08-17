@@ -44,5 +44,16 @@
       </p>
     </section>
   </main>
+   <script>
+    // Select the button and the navigation menu from the document
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.main-nav');
+
+    // Add an event listener for clicks on the hamburger button
+    hamburger.addEventListener('click', () => {
+      // When clicked, add or remove the 'nav-open' class on the menu
+      navMenu.classList.toggle('nav-open');
+    });
+  </script>
 </body>
 </html>
