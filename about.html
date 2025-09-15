@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – Rooshabh Hosiery</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="header-content">
+      <div class="logo">
+        <a href="index.html">Rooshabh Hosiery</a>
+      </div>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="active">About Us</a>
+        <a href="terms.html">Terms of Service</a>
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="returns.html">Return Policy</a>
+      </nav>
+      <button class="hamburger-menu" aria-label="Toggle navigation">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <section class="hero">
+      <div>
+        <span class="hero-badge">Local. Reliable. Trusted.</span>
+        <h1>About Rooshabh Hosiery</h1>
+        <p>Serving Anand with quality hosiery and innerwear products. We focus on comfort, durability, and fair pricing for everyday essentials.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="tel:+919429415294">Call / WhatsApp</a>
+          <a class="btn btn-outline" href="#contact">Store Details</a>
+        </div>
+      </div>
+      <div class="action-row">
+        <a class="btn btn-primary" href="tel:+919429415294">Call / WhatsApp: +91 9429415294</a>
+        <a class="btn btn-outline" target="_blank" rel="noopener" href="https://www.google.com/maps?q=Verai+Mata+Mandir,+Anand+388001">Get Directions</a>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mt-0">Who We Are</h2>
+      <p>Rooshabh Hosiery is a neighborhood retail store bringing a curated range of innerwear, socks, and everyday essentials to our customers. We believe in providing products that balance comfort, longevity, and value.</p>
+      <div class="card-grid mt-20">
+        <div class="card">
+          <h3>Quality First</h3>
+          <p>We handpick products that are durable and comfortable for daily use.</p>
+        </div>
+        <div class="card">
+          <h3>Honest Pricing</h3>
+          <p>Fair prices with transparent policies — no surprises at checkout.</p>
+        </div>
+        <div class="card">
+          <h3>Customer Care</h3>
+          <p>Need help with sizes or returns? We’re here to help in-store and by phone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2 class="mt-0">Contact & Store Info</h2>
+      <p class="mb-0"><strong>Address:</strong> Verai Mata Mandir, Anand – 388001</p>
+      <p class="mt-0"><strong>Phone / WhatsApp:</strong> <a href="tel:+919429415294">+91 9429415294</a></p>
+      <p class="muted">For any policy-related queries, please refer to our Terms, Privacy, and Return policy pages.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <h4>Rooshabh Hosiery</h4>
+        <p class="mb-0">Verai Mata Mandir, Anand – 388001</p>
+        <p class="mt-0"><a href="tel:+919429415294">+91 9429415294</a></p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p class="mb-0"><a href="about.html">About Us</a></p>
+        <p class="mb-0"><a href="terms.html">Terms of Service</a></p>
+        <p class="mb-0"><a href="privacy.html">Privacy Policy</a></p>
+        <p class="mb-0"><a href="returns.html">Return Policy</a></p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="mb-0">Call / WhatsApp: <a href="tel:+919429415294">+91 9429415294</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Rooshabh Hosiery. All rights reserved.</div>
+  </footer>
+
+  <script>
+    const hamburger = document.querySelector('.hamburger-menu');
+    const navMenu = document.querySelector('.main-nav');
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('nav-open');
+    });
+  </script>
+</body>
+</html>
